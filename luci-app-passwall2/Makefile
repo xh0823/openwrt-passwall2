@@ -144,6 +144,11 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Plugin
 	select PACKAGE_v2ray-plugin
 	default y if aarch64||arm||i386||x86_64
 
+config PACKAGE_$(PKG_NAME)_INCLUDE_Geoview
+	bool "Include Geoview"
+	select PACKAGE_geoview
+	default y if aarch64||arm||i386||x86_64
+
 endif
 endmenu
 endef
